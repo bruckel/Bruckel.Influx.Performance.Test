@@ -31,6 +31,7 @@ var temp1 = coefficients.Count();
 var watch = new Stopwatch();
 watch.Start();
 
+//* Cliente Influx *//
 using var client = new InfluxDBClient("http://localhost:8086", "kqn3Bntiv619ienSJeBrkcpaUwVC7p3vcQJmWrLjVjEDgnulmTFtgwkB77Ds-svCN0AMQl9URQJwsBPyZ1rxLQ==");
 using (var writeApi = client.GetWriteApi())
 {
